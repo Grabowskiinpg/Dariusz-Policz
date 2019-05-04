@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/calc_MG.hpp
+
+C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/include/calc_MG.hpp
+
+C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/include/calc_RG.hpp
+math.h
+-
+
+C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/main.cpp
+include/calc_RG.hpp
+C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/include/calc_RG.hpp
+include/calc_MG.hpp
+C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/include/calc_MG.hpp
+cstdlib
+-
+
+C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/src/calc_MG.cpp
+calc_MG.hpp
+C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/src/calc_MG.hpp
+
+C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/src/calc_RG.cpp
+

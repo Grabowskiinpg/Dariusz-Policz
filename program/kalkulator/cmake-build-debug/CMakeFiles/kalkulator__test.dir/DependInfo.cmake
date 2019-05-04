@@ -4,27 +4,28 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zyrafau/CLionProjects/kalkulator/calc.cpp" "/home/zyrafau/CLionProjects/kalkulator/cmake-build-debug/CMakeFiles/kalkulator__test.dir/calc.cpp.o"
-  "/home/zyrafau/CLionProjects/kalkulator/main_gtest.cpp" "/home/zyrafau/CLionProjects/kalkulator/cmake-build-debug/CMakeFiles/kalkulator__test.dir/main_gtest.cpp.o"
-  "/home/zyrafau/CLionProjects/kalkulator/test_calc.cpp" "/home/zyrafau/CLionProjects/kalkulator/cmake-build-debug/CMakeFiles/kalkulator__test.dir/test_calc.cpp.o"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/src/calc_MG.cpp" "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/cmake-build-debug/CMakeFiles/kalkulator__test.dir/src/calc_MG.cpp.obj"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/src/calc_RG.cpp" "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/cmake-build-debug/CMakeFiles/kalkulator__test.dir/src/calc_RG.cpp.obj"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/test/main_gtest.cpp" "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/cmake-build-debug/CMakeFiles/kalkulator__test.dir/test/main_gtest.cpp.obj"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/test/test_calc.cpp" "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/cmake-build-debug/CMakeFiles/kalkulator__test.dir/test/test_calc.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "Clang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "../googletest-master/googlemock/include"
   "../googletest-master/googletest/include"
-  "/home/zyrafau/CLionProjects/googletest-master/googlemock/include"
-  "/home/zyrafau/CLionProjects/googletest-master/googlemock"
-  "/home/zyrafau/CLionProjects/googletest-master/googletest/include"
-  "/home/zyrafau/CLionProjects/googletest-master/googletest"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/googletest-master/googlemock/include"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/googletest-master/googlemock"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/googletest-master/googletest/include"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/googletest-master/googletest"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/zyrafau/CLionProjects/kalkulator/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
-  "/home/zyrafau/CLionProjects/kalkulator/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

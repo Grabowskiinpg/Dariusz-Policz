@@ -10,7 +10,8 @@ include_directories(
 )
 
 set(SOURCE_FILES
-        calc.cpp
+        src/calc_RG.cpp
+        src/calc_MG.cpp
         )
 
 add_executable(kalkulator ${SOURCE_FILES} main.cpp)
@@ -18,10 +19,10 @@ add_executable(kalkulator ${SOURCE_FILES} main.cpp)
 # == Unit testing using Google Testing Framework ==
 
 set(SOURCES_FILES_TESTS
-        test_calc.cpp
+        test/test_calc.cpp
         )
 
-add_executable(kalkulator__test ${SOURCE_FILES} ${SOURCES_FILES_TESTS} main_gtest.cpp)
+add_executable(kalkulator__test ${SOURCE_FILES} ${SOURCES_FILES_TESTS} test/main_gtest.cpp)
 
 target_include_directories(kalkulator__test PUBLIC
         googletest-master/googlemock/include

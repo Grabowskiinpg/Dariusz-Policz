@@ -1,4 +1,5 @@
-#include "calc.hpp"
+#include "include/calc_RG.hpp"
+#include "include/calc_MG.hpp"
 #include <cstdlib>
 
 int main() {
