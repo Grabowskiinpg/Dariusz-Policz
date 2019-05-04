@@ -1,0 +1,1 @@
+/usr/bin/clang++-6.0  -g   CMakeFiles/kalkulator__test.dir/calc.cpp.o CMakeFiles/kalkulator__test.dir/test_calc.cpp.o CMakeFiles/kalkulator__test.dir/main_gtest.cpp.o  -o kalkulator__test googletest-master/googlemock/libgmockd.a googletest-master/googlemock/gtest/libgtestd.a -pthread 
