@@ -22,3 +22,19 @@ TEST(CalcTest, Division){
 TEST(CalcTest, Percent){
     EXPECT_EQ(percent<int> (4, 2), 200);
 }
+
+TEST(CalcTest, Sin){
+    EXPECT_EQ(sin(M_PI/2), 1);
+}
+
+TEST(CalcTest, Cos){
+    EXPECT_EQ(cos(M_PI/4), sqrt(2)/2);
+}
+
+TEST(CalcTest, Tan){
+    EXPECT_EQ(tan(M_PI/3), 1/cot(M_PI/3));
+}
+
+TEST(CalcTest, Cot){
+    EXPECT_EQ(cot(M_PI/4), 1/tan(M_PI/4));
+}

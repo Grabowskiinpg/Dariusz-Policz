@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/calc_MG.hpp
-
 C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/googletest-master/googlemock/include/gmock/gmock-actions.h
 errno.h
 -
@@ -475,14 +473,12 @@ acxx_demangle.h
 -
 
 C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/include/calc_MG.hpp
+cmath
+-
 
 C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/include/calc_RG.hpp
 math.h
 -
-
-C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/src/calc_MG.cpp
-calc_MG.hpp
-C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/src/calc_MG.hpp
 
 C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/test/test_calc.cpp
 gtest/gtest.h
