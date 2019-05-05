@@ -1,11 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/kalkulator.dir/src/calc_RG.cpp.obj"
-  "CMakeFiles/kalkulator.dir/src/calc_MG.cpp.obj"
-  "CMakeFiles/kalkulator.dir/main.cpp.obj"
+  "CMakeFiles/kalkulator.dir/src/calc_RG.cpp.o"
+  "CMakeFiles/kalkulator.dir/src/calc_MG.cpp.o"
+  "CMakeFiles/kalkulator.dir/main.cpp.o"
   "kalkulator.pdb"
-  "kalkulator.exe"
-  "kalkulator.exe.manifest"
-  "libkalkulator.dll.a"
+  "kalkulator"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -7,24 +7,36 @@
 #IncludeRegexTransform: 
 
 ../include/calc_MG.hpp
+cmath
+-
 
-C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/include/calc_MG.hpp
-
-C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/include/calc_RG.hpp
+../include/calc_RG.hpp
 math.h
 -
 
-C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/main.cpp
+/home/zyrafau/calc_inpg/program/kalkulator/include/calc_MG.hpp
+cmath
+-
+
+/home/zyrafau/calc_inpg/program/kalkulator/include/calc_RG.hpp
+math.h
+-
+
+/home/zyrafau/calc_inpg/program/kalkulator/main.cpp
 include/calc_RG.hpp
-C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/include/calc_RG.hpp
+/home/zyrafau/calc_inpg/program/kalkulator/include/calc_RG.hpp
 include/calc_MG.hpp
-C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/include/calc_MG.hpp
+/home/zyrafau/calc_inpg/program/kalkulator/include/calc_MG.hpp
 cstdlib
 -
 
-C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/src/calc_MG.cpp
+/home/zyrafau/calc_inpg/program/kalkulator/src/calc_MG.cpp
 calc_MG.hpp
-C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/src/calc_MG.hpp
+/home/zyrafau/calc_inpg/program/kalkulator/src/calc_MG.hpp
 
-C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/src/calc_RG.cpp
+/home/zyrafau/calc_inpg/program/kalkulator/src/calc_RG.cpp
+calc_RG.hpp
+/home/zyrafau/calc_inpg/program/kalkulator/src/calc_RG.hpp
+stdexcept
+-
 

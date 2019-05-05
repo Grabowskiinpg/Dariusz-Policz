@@ -1,8 +1,8 @@
-# Install script for directory: C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/googletest-master
+# Install script for directory: /home/zyrafau/calc_inpg/program/googletest-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/kalkulator")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/cmake-build-debug/googletest-master/googlemock/cmake_install.cmake")
+  include("/home/zyrafau/calc_inpg/program/kalkulator/cmake-build-debug/googletest-master/googlemock/cmake_install.cmake")
 
 endif()
 

@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/googletest-master/googletest/src/gtest-all.cc" "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
+  "/home/zyrafau/calc_inpg/program/googletest-master/googletest/src/gtest-all.cc" "/home/zyrafau/calc_inpg/program/kalkulator/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/include"
-  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/googletest-master/googletest/include"
-  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/googletest-master/googletest"
+  "/home/zyrafau/calc_inpg/program/kalkulator/include"
+  "/home/zyrafau/calc_inpg/program/googletest-master/googletest/include"
+  "/home/zyrafau/calc_inpg/program/googletest-master/googletest"
   )
 
 # Targets to which this target links.
