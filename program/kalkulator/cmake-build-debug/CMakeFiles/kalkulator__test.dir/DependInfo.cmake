@@ -4,28 +4,28 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zyrafau/calc_inpg/program/kalkulator/src/calc_MG.cpp" "/home/zyrafau/calc_inpg/program/kalkulator/cmake-build-debug/CMakeFiles/kalkulator__test.dir/src/calc_MG.cpp.o"
-  "/home/zyrafau/calc_inpg/program/kalkulator/src/calc_RG.cpp" "/home/zyrafau/calc_inpg/program/kalkulator/cmake-build-debug/CMakeFiles/kalkulator__test.dir/src/calc_RG.cpp.o"
-  "/home/zyrafau/calc_inpg/program/kalkulator/test/main_gtest.cpp" "/home/zyrafau/calc_inpg/program/kalkulator/cmake-build-debug/CMakeFiles/kalkulator__test.dir/test/main_gtest.cpp.o"
-  "/home/zyrafau/calc_inpg/program/kalkulator/test/test_calc.cpp" "/home/zyrafau/calc_inpg/program/kalkulator/cmake-build-debug/CMakeFiles/kalkulator__test.dir/test/test_calc.cpp.o"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/src/calc_MG.cpp" "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/cmake-build-debug/CMakeFiles/kalkulator__test.dir/src/calc_MG.cpp.obj"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/src/calc_RG.cpp" "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/cmake-build-debug/CMakeFiles/kalkulator__test.dir/src/calc_RG.cpp.obj"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/test/main_gtest.cpp" "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/cmake-build-debug/CMakeFiles/kalkulator__test.dir/test/main_gtest.cpp.obj"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/test/test_calc.cpp" "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/cmake-build-debug/CMakeFiles/kalkulator__test.dir/test/test_calc.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "Clang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "../googletest-master/googlemock/include"
   "../googletest-master/googletest/include"
-  "/home/zyrafau/calc_inpg/program/googletest-master/googlemock/include"
-  "/home/zyrafau/calc_inpg/program/googletest-master/googlemock"
-  "/home/zyrafau/calc_inpg/program/googletest-master/googletest/include"
-  "/home/zyrafau/calc_inpg/program/googletest-master/googletest"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/googletest-master/googlemock/include"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/googletest-master/googlemock"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/googletest-master/googletest/include"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/googletest-master/googletest"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/zyrafau/calc_inpg/program/kalkulator/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
-  "/home/zyrafau/calc_inpg/program/kalkulator/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
+  "C:/Projekt Kalkulator Naukowego/Projekt_Kalkulator/program/kalkulator/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

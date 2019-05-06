@@ -24,17 +24,33 @@ TEST(CalcTest, Percent){
 }
 
 TEST(CalcTest, Sin){
-    EXPECT_EQ(sin(M_PI/2), 1);
+    EXPECT_EQ(sin<double> (M_PI/2), 1);
 }
 
 TEST(CalcTest, Cos){
-    EXPECT_EQ(cos(M_PI/4), sqrt(2)/2);
+    EXPECT_EQ(cos<double> (M_PI/4), sqrt(2)/2);
 }
 
 TEST(CalcTest, Tan){
-    EXPECT_EQ(tan(M_PI/3), 1/cot(M_PI/3));
+    EXPECT_EQ(tan<double> (M_PI/3), 1/cot<double> (M_PI/3));
 }
 
 TEST(CalcTest, Cot){
-    EXPECT_EQ(cot(M_PI/4), 1/tan(M_PI/4));
+    EXPECT_EQ(cot<double> (M_PI/4), 1/tan<double> (M_PI/4));
+}
+
+TEST(ClacTest, Asin){
+    EXPECT_EQ(asin<double> (1), M_PI/2);
+}
+
+TEST(ClacTest, Acos){
+    EXPECT_EQ(acos<double> (sqrt(2)/2), M_PI/4);
+}
+
+TEST(ClacTest, Atan){
+    EXPECT_EQ(atan<double> (1), M_PI/4);
+}
+
+TEST(ClacTest, Acot){
+    EXPECT_EQ(acot<double> (sqrt(3)), M_PI/2-M_PI/3);
 }

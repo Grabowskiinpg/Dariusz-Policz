@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/kalkulator__test.dir/src/calc_RG.cpp.o"
-  "CMakeFiles/kalkulator__test.dir/src/calc_MG.cpp.o"
-  "CMakeFiles/kalkulator__test.dir/test/test_calc.cpp.o"
-  "CMakeFiles/kalkulator__test.dir/test/main_gtest.cpp.o"
+  "CMakeFiles/kalkulator__test.dir/src/calc_RG.cpp.obj"
+  "CMakeFiles/kalkulator__test.dir/src/calc_MG.cpp.obj"
+  "CMakeFiles/kalkulator__test.dir/test/test_calc.cpp.obj"
+  "CMakeFiles/kalkulator__test.dir/test/main_gtest.cpp.obj"
   "kalkulator__test.pdb"
-  "kalkulator__test"
+  "kalkulator__test.exe"
+  "kalkulator__test.exe.manifest"
+  "libkalkulator__test.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
