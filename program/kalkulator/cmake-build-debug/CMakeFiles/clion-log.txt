@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Bartosz\Desktop\Projekt_Kalkulator\program\kalkulator
+"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\Bartosz\Desktop\Kalkulator INPG\program\kalkulator"
 -- The C compiler identification is GNU 8.1.0
 -- The CXX compiler identification is GNU 8.1.0
 -- Check for working C compiler: C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/gcc.exe
@@ -15,5 +15,21 @@
 -- Detecting CXX compile features - done
 -- Could NOT find PythonInterp (missing: PYTHON_EXECUTABLE) 
 -- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/Bartosz/Desktop/Projekt_Kalkulator/program/kalkulator/cmake-build-debug
+CMake Error at CMakeLists.txt:18 (add_executable):
+  Cannot find source file:
+
+    src/calc_BB.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:18 (add_executable):
+  No SOURCES given to target: kalkulator
+
+
+CMake Error at CMakeLists.txt:26 (add_executable):
+  No SOURCES given to target: kalkulator__test
+
+
+-- Build files have been written to: C:/Users/Bartosz/Desktop/Kalkulator INPG/program/kalkulator/cmake-build-debug
