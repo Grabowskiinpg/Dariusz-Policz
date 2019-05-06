@@ -3,9 +3,9 @@
 
 #include <math.h> //M_PI oraz M_E
 
-long factorial(float fac); //brak testów
+long factorial(float fac);
 
-template<typename T>    //brak testów
+template<typename T>
 void remember(double* adr, T val){
     *adr = (double)val;
 }

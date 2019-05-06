@@ -54,3 +54,16 @@ TEST(ClacTest, Atan){
 TEST(ClacTest, Acot){
     EXPECT_EQ(acot<double> (sqrt(3)), M_PI/2-M_PI/3);
 }
+
+TEST(CalcTest, Remember){
+    double adr;
+    remember(&adr, 5);
+
+    EXPECT_EQ(adr, 5);
+}
+
+TEST(CalcTest, Factorial){
+    ASSERT_NO_THROW({EXPECT_EQ(factorial(12), 479001600);});
+    EXPECT_EQ(factorial(0.5), 0);
+    EXPECT_EQ(factorial(-6.789), 0);
+}
