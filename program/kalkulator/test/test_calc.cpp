@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include "../include/calc_RG.hpp"
 #include "../include/calc_MG.hpp"
+#include "../include/calc_BB.hpp"
 #include <gmock/gmock.h>
 
 TEST(CalcTest, Sum){
@@ -83,5 +84,10 @@ TEST(ClacTest, Tanh){
 TEST(ClacTest, Coth){
     //*
     EXPECT_EQ(coth<double> (2), 1/tanh<double> (2));
+}
+
+
+TEST(CalTest, Pow){
+    EXPECT_EQ(pow <int> (2,3),8);
 }
 
