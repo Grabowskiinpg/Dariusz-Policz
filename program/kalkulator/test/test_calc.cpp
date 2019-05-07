@@ -91,3 +91,6 @@ TEST(CalTest, Pow){
     EXPECT_EQ(pow <int> (2,3),8);
 }
 
+TEST(CalTest, Pierw){
+    EXPECT_EQ(pierwiastek <float> (144,2),12);
+}

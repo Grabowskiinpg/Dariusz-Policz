@@ -15,10 +15,13 @@ T potega(T a , T b )       // Potęgowanie , pamiętać, że każda liczba podni
     return pow(a,b);
 }
 
-
 template<typename T>
+T pierwiastek(T a1 , T b1){
+    T c1 = 1/b1 ;
 
-T pierw( T x , int y ) ;      // Pierwiastkowanie
+    return pow(a1, c1) ;
+}
+
 
 
 
