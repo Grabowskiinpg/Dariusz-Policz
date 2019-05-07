@@ -67,3 +67,20 @@ TEST(CalcTest, Factorial){
     EXPECT_EQ(factorial(0.5), 0);
     EXPECT_EQ(factorial(-6.789), 0);
 }
+
+TEST(ClacTest, Cosh){
+    EXPECT_EQ(cosh<double> (0), 1);
+}
+
+TEST(ClacTest, Sinh){
+    EXPECT_EQ(sinh<double> (0), 0);
+}
+
+TEST(ClacTest, Tanh){
+    EXPECT_EQ(tanh<double> (0), 0);
+}
+
+TEST(ClacTest, Coth){
+    EXPECT_EQ(coth<double> (2), 1/tanh<double> (2));
+}
+

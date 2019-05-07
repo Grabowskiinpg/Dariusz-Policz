@@ -33,7 +33,7 @@ template<typename T>
 T percent(T a, T b){
     return division<T> (a, b) * 100;
 }
-
+//Funkcje trygonometryczne #1
 template<typename T>
 T sin(T x){
     return std::sin(x);
@@ -55,7 +55,7 @@ T cot(T x){
     //Pamiętać, że dla 0 jest nieokreślony
     return cos<T> (x)/sin<T> (x);
 }
-
+//Funckje odwrotne do #1
 template<typename T>
 T acos(T x){
     //Pamiętać, że dziedzina to [0, M_PI]
@@ -77,20 +77,20 @@ template<typename T>
 T acot(T x){
     return M_PI/2 - atan<T> (x);
 }
-
+//Funkcje hiperboliczne
 template<typename T>
 T cosh(T x){
-    return cosh(x);
+    return std::cosh(x);
 }
 
 template<typename T>
 T sinh(T x){
-    return sinh(x);
+    return std::sinh(x);
 }
 
 template<typename T>
 T tanh(T x){
-    return tanh(x);
+    return std::tanh(x);
 }
 
 template<typename T>
@@ -98,4 +98,6 @@ T coth(T x){
     //Pamiętać, że w 0 nie można
     return cosh<T> (x)/sinh<T> (x);
 }
+
+
 #endif //KALKULATOR_CALC_MG_HPP
