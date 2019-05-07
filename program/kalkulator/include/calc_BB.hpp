@@ -7,10 +7,12 @@
 #include <math.h>
 #include <iostream>
 
+
+
 template<typename T>
-T pow(T a , T b )       // Potęgowanie , pamiętać, że każda liczba podniesiona do potęgi 0 daje wynik 1
+T potega(T a , T b )       // Potęgowanie , pamiętać, że każda liczba podniesiona do potęgi 0 daje wynik 1
 {
-    return std::pow ;
+    return pow(a,b);
 }
 
 
