@@ -23,6 +23,6 @@ T pierw( T x , int y ) ;      // Pierwiastkowanie
 /*float log(float l)                // Liczenie logarytmu naturalnego , należy pamiętać by x>0
 {
     return std::log ;
-}*/ //dałem Ci w komentarz Michał, bo zblokowałeś możliwość testów przez zły kod, który wyrzucał błąd
+}*/ //dałem Ci w komentarz to (Michał), bo zblokowałeś możliwość testów przez zły kod, który wyrzucał błąd
 
 #endif //PROGRAM_CAL_BB_HPP

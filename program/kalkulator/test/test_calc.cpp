@@ -81,6 +81,7 @@ TEST(ClacTest, Tanh){
 }
 
 TEST(ClacTest, Coth){
+    //*
     EXPECT_EQ(coth<double> (2), 1/tanh<double> (2));
 }
 

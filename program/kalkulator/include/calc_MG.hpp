@@ -95,7 +95,7 @@ T tanh(T x){
 
 template<typename T>
 T coth(T x){
-    //Pamiętać, że w 0 nie można
+    //Pamiętać, że w 0 nie można (uzwględnić)
     return cosh<T> (x)/sinh<T> (x);
 }
 
