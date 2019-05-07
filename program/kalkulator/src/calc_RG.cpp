@@ -12,3 +12,16 @@ long factorial(float fac) {
     }
     return 0; //to edit
 }
+
+// jeszcze testy do poniższych (szablony?)
+double degrees(double rad){
+    return rad*180/M_PI;
+}
+
+double radians(double deg){
+    return deg*M_PI/180;
+}
+
+double exponent(double x){
+    return std::exp(x);
+}
