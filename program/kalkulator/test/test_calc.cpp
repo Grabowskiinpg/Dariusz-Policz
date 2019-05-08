@@ -88,9 +88,9 @@ TEST(ClacTest, Coth){
 
 
 TEST(CalTest, Pow){
-    EXPECT_EQ(pow <int> (2,3),8);
+    EXPECT_EQ(pow <int> (2,3),8);          //potęgowanie test
 }
 
 TEST(CalTest, Pierw){
-    EXPECT_EQ(pierwiastek <float> (144,2),12);
+    EXPECT_EQ(pierw  (3,-64), -4);          //pierwiastkowanie z dowolnego stopnia test
 }

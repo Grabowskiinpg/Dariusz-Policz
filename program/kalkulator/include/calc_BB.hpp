@@ -10,18 +10,13 @@
 
 
 template<typename T>
-T potega(T a , T b )       // Potęgowanie , pamiętać, że każda liczba podniesiona do potęgi 0 daje wynik 1
+T potega(T podstawa , T pot )       // Potęgowanie , pamiętać, że każda liczba podniesiona do potęgi 0 daje wynik 1
 {
-    return pow(a,b);
+    return pow(podstawa,pot);
 }
 
-template<typename T>
-T pierwiastek(T a1 , T b1){
-    T c1 = 1/b1 ;
 
-    return pow(a1, c1) ;
-}
-
+float pierw(int stopien_pierw , float liczba_podpierw ) ;
 
 
 
