@@ -8,7 +8,7 @@
 
 float pierw(int stopien_pierw , float liczba_podpierw ){
 
-    if(liczba_podpierw<0){
+    if(liczba_podpierw<0 && stopien_pierw%2 !=0){
         liczba_podpierw=fabs(liczba_podpierw);
 
         std::cout << -1*exp(log(liczba_podpierw)/stopien_pierw) << std::endl;
@@ -21,4 +21,12 @@ float pierw(int stopien_pierw , float liczba_podpierw ){
 
         return exp(log(liczba_podpierw)/stopien_pierw);
     }
+}
+
+float ln(int x){
+    return log((float) x) ;        //logarytm naturalny
+}
+
+float log_10(int y){
+    return log10((float) y) ;        //logarytm dziesiętny
 }

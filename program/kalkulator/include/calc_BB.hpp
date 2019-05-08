@@ -16,13 +16,12 @@ T potega(T podstawa , T pot )       // Potęgowanie , pamiętać, że każda lic
 }
 
 
-float pierw(int stopien_pierw , float liczba_podpierw ) ;
+float pierw(int stopien_pierw , float liczba_podpierw ) ; // Pierwiastkowanie liczb o dowolnym stopniu
 
 
+float ln(int x);  // Logarytm naturalny
 
-/*float log(float l)                // Liczenie logarytmu naturalnego , należy pamiętać by x>0
-{
-    return std::log ;
-}*/ //dałem Ci w komentarz to (Michał), bo zblokowałeś możliwość testów przez zły kod, który wyrzucał błąd
+float log_10(int x);  // Logarytm dziesiętny
+
 
 #endif //PROGRAM_CAL_BB_HPP

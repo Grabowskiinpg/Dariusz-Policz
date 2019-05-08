@@ -94,3 +94,13 @@ TEST(CalTest, Pow){
 TEST(CalTest, Pierw){
     EXPECT_EQ(pierw  (3,-64), -4);          //pierwiastkowanie z dowolnego stopnia test
 }
+
+
+TEST(CalTest, Ln) {
+    EXPECT_EQ(ln(1), 0);   // Logarytm naturalny test
+}
+
+
+TEST(CalTest, Log_10) {
+    EXPECT_EQ(log_10(100), 2);  // Logarytm dziesiętny test
+}
