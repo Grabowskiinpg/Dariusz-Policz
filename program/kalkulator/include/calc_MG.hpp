@@ -99,5 +99,26 @@ T coth(T x){
     return cosh<T> (x)/sinh<T> (x);
 }
 
+template<typename T>
+T abs(T x){
+    return std::abs(x);
+}
+
+template<typename T>
+T modulo(T x, T y){
+    return x % y;
+}
+
+template<typename T>
+T floor(T x){
+    return std::floor(x);
+}
+
+template<typename T>
+T ceil(T x){
+    return std::ceil(x);
+}
+
+
 
 #endif //KALKULATOR_CALC_MG_HPP
