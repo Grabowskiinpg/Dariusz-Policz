@@ -104,3 +104,23 @@ TEST(CalTest, Ln) {
 TEST(CalTest, Log_10) {
     EXPECT_EQ(log_10(100), 2);  // Logarytm dziesiętny test
 }
+
+TEST(ClacTest, Abs){
+    EXPECT_EQ(abs<int> (-2), 2);
+}
+
+TEST(ClacTest, Modulo){
+    EXPECT_EQ(modulo<int> (5, 3), 2);
+}
+
+TEST(ClacTest, Floor){
+    EXPECT_EQ(floor<double> (2.123), 2);
+}
+
+TEST(ClacTest, Ceil){
+    EXPECT_EQ(ceil<double> (2.123), 3);
+}
+
+TEST(ClacTest, Mantysa){
+    EXPECT_EQ(mantysa<double> (2.425), 0.425);
+}

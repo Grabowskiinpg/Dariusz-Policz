@@ -119,6 +119,10 @@ T ceil(T x){
     return std::ceil(x);
 }
 
+template<typename T>
+T mantysa(T x){
+    return std::round((x - floor<T> (x))*1000)/1000;
+}
 
 
 #endif //KALKULATOR_CALC_MG_HPP
