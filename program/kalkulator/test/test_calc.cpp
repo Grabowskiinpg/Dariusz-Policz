@@ -124,3 +124,15 @@ TEST(ClacTest, Ceil){
 TEST(ClacTest, Mantysa){
     EXPECT_EQ(mantysa<double> (2.425), 0.425);
 }
+
+TEST(CalcTest_degrees,Degree){
+    EXPECT_EQ(degrees(M_PI/2),90);
+}
+
+TEST(CalcTest_radians,Radians){
+    EXPECT_EQ(radians(90.0),M_PI/2);
+}
+
+TEST(CalcTest_exponent,Exponent){
+    EXPECT_EQ(exponent(2),std::exp(2));
+}
