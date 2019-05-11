@@ -13,6 +13,7 @@ set(SOURCE_FILES
         src/calc_RG.cpp
         src/calc_MG.cpp
         src/calc_BB.cpp
+        src/calc_MGr.cpp
         )
 
 add_executable(kalkulator ${SOURCE_FILES} main.cpp)
