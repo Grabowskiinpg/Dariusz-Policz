@@ -104,3 +104,44 @@ TEST(CalTest, Ln) {
 TEST(CalTest, Log_10) {
     EXPECT_EQ(log_10(100), 2);  // Logarytm dziesiętny test
 }
+
+TEST(ClacTest, Abs){
+    EXPECT_EQ(abs<int> (-2), 2);
+}
+
+TEST(ClacTest, Modulo){
+    EXPECT_EQ(modulo<int> (5, 3), 2);
+}
+
+TEST(ClacTest, Floor){
+    EXPECT_EQ(floor<double> (2.123), 2);
+}
+
+TEST(ClacTest, Ceil){
+    EXPECT_EQ(ceil<double> (2.123), 3);
+}
+
+TEST(ClacTest, Mantysa){
+    EXPECT_EQ(mantysa<double> (2.425), 0.425);
+}
+
+TEST(CalcTest_degrees,Degree){
+    EXPECT_EQ(degrees(M_PI/2),90);
+}
+
+TEST(CalcTest_radians,Radians){
+    EXPECT_EQ(radians(90.0),M_PI/2);
+}
+
+TEST(CalcTest_exponent,Exponent){
+    EXPECT_EQ(exponent(2),std::exp(2));
+}
+
+TEST(CalcTest, Vector){
+    Vector<int> v(std::vector<int> {1, 2, 3});
+
+    ASSERT_EQ(v.size(), 3U);
+    EXPECT_EQ(v[0], 1);
+    EXPECT_EQ(v[1], 2);
+    EXPECT_EQ(v[2], 3);
+}
