@@ -136,3 +136,12 @@ TEST(CalcTest_radians,Radians){
 TEST(CalcTest_exponent,Exponent){
     EXPECT_EQ(exponent(2),std::exp(2));
 }
+
+TEST(CalcTest, Vector){
+    Vector<int> v(std::vector<int> {1, 2, 3});
+
+    ASSERT_EQ(v.size(), 3U);
+    EXPECT_EQ(v[0], 1);
+    EXPECT_EQ(v[1], 2);
+    EXPECT_EQ(v[2], 3);
+}

@@ -6,6 +6,8 @@
 #define KALKULATOR_CALC_MG_HPP
 #include <cmath>
 #include <iostream>
+#include <functional>
+#include <numeric>
 //Podstawowe funckje (prototypy)
 template<typename T>
 T sum(T a , T b){
@@ -124,5 +126,50 @@ T mantysa(T x){
     return std::round((x - floor<T> (x))*1000)/1000;
 }
 
+template<typename T>
+class Vector{
+public:
+    Vector(const std::vector<T>& v) : v_(v) {}
+
+    Vector(std::size_t n = 3) : v_(n, 0) {}
+
+    T norm();
+
+    std::size_t size() const { return v_.size(); }
+
+    const T& operator[](std::size_t pos) const { return v_[pos]; }
+
+    T& operator[](std::size_t pos) { return v_[pos]; }
+
+    typename std::vector<T>::const_iterator cbegin() const { return v_.cbegin(); }
+
+    typename std::vector<T>::const_iterator cend() const { return v_.cend(); }
+
+    typename std::vector<T>::iterator begin() { return v_.begin(); }
+
+    typename std::vector<T>::const_iterator begin() const { return v_.cbegin(); }
+
+    typename std::vector<T>::iterator end() { return v_.end(); }
+
+    typename std::vector<T>::const_iterator end() const { return v_.cend(); }
+private:
+    std::vector<T> v_;
+};
+
+template<typename T>
+Vector<T> add_vectors(const Vector<T>& v1, const Vector<T>& v2){
+    Vector<T> v_sum(v1.size());
+
+    std::transform(v1.begin(), v1.end(), v2.begin(), v_sum.begin(), std::plus<T> ());
+
+    return v_sum;
+}
+
+template<typename T>
+T Vector<T>::norm(){
+    double sum_of_squares = std::accumulate(v_.begin(), v_.end(), 0, [](int acc, int elem) { return acc + elem * elem; });
+
+    return sqrt(sum_of_squares);
+}
 
 #endif //KALKULATOR_CALC_MG_HPP
