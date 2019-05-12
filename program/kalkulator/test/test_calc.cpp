@@ -145,3 +145,35 @@ TEST(CalcTest, Vector){
     EXPECT_EQ(v[1], 2);
     EXPECT_EQ(v[2], 3);
 }
+
+TEST(CalcTest, Norm){
+    Vector<int> v(std::vector<int> {0, 4, 3});
+
+    EXPECT_EQ(v.norm(), 5);
+}
+
+TEST(CalcTest, AddVectors){
+    Vector<int> v1(std::vector<int> {0, 1, 2});
+    Vector<int> v2(std::vector<int> {-1, 2, 2});
+    Vector<int> v = add_vectors<int> (v1, v2);
+
+    ASSERT_EQ(v.size(), 3U);
+    EXPECT_EQ(v[0], -1);
+    EXPECT_EQ(v[1], 3);
+    EXPECT_EQ(v[2], 4);
+}
+
+TEST(CalcTest, Matrix) {
+    Matrix<int> m(std::vector<std::vector<int>>{
+            std::vector<int>{11, 12},
+            std::vector<int>{21, 22}
+    });
+
+    ASSERT_EQ(m.size(), 2U);
+    EXPECT_EQ(m[0].size(), 2U);
+    EXPECT_EQ(m[0][0], 11);
+    EXPECT_EQ(m[0][1], 12);
+    EXPECT_EQ(m[1].size(), 2U);
+    EXPECT_EQ(m[1][0], 21);
+    EXPECT_EQ(m[1][1], 22);
+}
