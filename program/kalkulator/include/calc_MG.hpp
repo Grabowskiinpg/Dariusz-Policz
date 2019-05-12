@@ -125,7 +125,7 @@ template<typename T>
 T mantysa(T x){
     return std::round((x - floor<T> (x))*1000)/1000;
 }
-
+//-----------------------------Wektory-----------------------------
 template<typename T>
 class Vector{
 public:
@@ -167,9 +167,40 @@ Vector<T> add_vectors(const Vector<T>& v1, const Vector<T>& v2){
 
 template<typename T>
 T Vector<T>::norm(){
-    double sum_of_squares = std::accumulate(v_.begin(), v_.end(), 0, [](int acc, int elem) { return acc + elem * elem; });
+    T sum_of_squares = std::accumulate(v_.begin(), v_.end(), 0, [](int acc, int elem) { return acc + elem * elem; });
 
     return sqrt(sum_of_squares);
 }
+//-----------------------------Macierze-----------------------------
+template<typename T>
+class Matrix {
+public:
+    Matrix(std::size_t n_rows, std::size_t n_cols) : matrix_(n_rows, Vector<T>(n_cols)) {}
+
+    Matrix(const std::vector<std::vector<T>>& m) {
+        std::copy(m.begin(), m.end(), std::back_inserter(matrix_));
+    }
+
+    std::size_t size() const { return matrix_.size(); }
+
+    const Vector<T>& operator[](std::size_t pos) const { return matrix_[pos]; }
+
+    Vector<T>& operator[](std::size_t pos) { return matrix_[pos]; }
+
+    typename std::vector<Vector<T>>::const_iterator cbegin() const { return matrix_.cbegin(); }
+
+    typename std::vector<Vector<T>>::const_iterator cend() const { return matrix_.cend(); }
+
+    typename std::vector<Vector<T>>::iterator begin() { return matrix_.begin(); }
+
+    typename std::vector<Vector<T>>::const_iterator begin() const { return matrix_.cbegin(); }
+
+    typename std::vector<Vector<T>>::iterator end() { return matrix_.end(); }
+
+    typename std::vector<Vector<T>>::const_iterator end() const { return matrix_.cend(); }
+
+private:
+    std::vector<Vector<T>> matrix_;
+};
 
 #endif //KALKULATOR_CALC_MG_HPP

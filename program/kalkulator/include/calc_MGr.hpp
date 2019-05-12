@@ -5,7 +5,7 @@
 #ifndef KALKULATOR_CALC_MGR_HPP
 #define KALKULATOR_CALC_MGR_HPP
 
-class Monomial{ //jednomian
+/*class Monomial{ //jednomian
 private:
     template<typename T> numeric_factor_;
     int index_;
@@ -16,7 +16,7 @@ template<typename T>
     Monomial(T numeric_factor):Monomial(numeric_factor,1){}
     Monomial(int index): Monomial(1,index){}
     Monomial():Monomial(1,1){}
-};
+};*/ //(Michał) wziąłem Ci w komentarz bo zblokowałeś testy
 
 
 #endif //KALKULATOR_CALC_MGR_HPP
