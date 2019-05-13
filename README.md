@@ -3,3 +3,5 @@ To jest plik README. W ankiecie przegłosowaliście ten sposób przeprowadzania 
 ~RG
 
 Nie widzę wszystkich raportów na kalendarzu Google. Naprawcie to. ~RG
+
+Raporty zostaną  uzupełnione jutro ze względu na późną  porę i poranne zajęcia. ~BB
