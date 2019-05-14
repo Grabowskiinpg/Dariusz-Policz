@@ -9,3 +9,5 @@ Raporty zostaną  uzupełnione jutro ze względu na późną  porę i poranne za
 14 maja
 Chciałbym, żebyście zrobili swojego ostatniego commita dzisiaj, a najpóźniej jutro przed zajęciami z analizy, bo chcę skończyć prezentację przeglądu sprintu. W czwartek już nie zdążę.
 ~RG
+
+Po próbie załączenia testów program się wysypuje ~BB
