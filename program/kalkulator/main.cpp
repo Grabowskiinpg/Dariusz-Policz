@@ -30,12 +30,13 @@ int main() {
         std::cout << "19.modulo" << std::endl;
         std::cout << "20.floor" << std::endl;
         std::cout << "21.Zaokraglenie liczby w gore" << std::endl;
+        std::cout << "21.Silnia" << std::endl;
 
 
         std::cin >> nrdzial;
 
 
-        if (nrdzial < 1 || nrdzial > 20) {
+        if (nrdzial < 1 || nrdzial > 30) {
             std::cout << "Niestety wybrales zly zakres" << std::endl;
 
             return 0;
@@ -326,6 +327,20 @@ int main() {
                           << std::endl;
 
                 break;
+
+            case 22 :
+
+                float liczba28;
+
+                std::cout << "Podaj  liczbe" << std::endl;
+                std::cin >> liczba28;
+
+
+                std::cout << "                  Silnia  (" << liczba28 << ") =" << factorial( liczba28)<< std::endl
+                          << std::endl;
+
+                break;
+
 
 
         }
