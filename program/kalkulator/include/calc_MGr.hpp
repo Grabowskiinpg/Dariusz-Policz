@@ -4,7 +4,7 @@
 
 #ifndef KALKULATOR_CALC_MGR_HPP
 #define KALKULATOR_CALC_MGR_HPP
-
+/*
 class Monomial{ //jednomian
 private:
     template<typename T> numeric_factor_;
@@ -18,5 +18,5 @@ template<typename T>
     Monomial():Monomial(1,1){}
 };
 
-
+*/
 #endif //KALKULATOR_CALC_MGR_HPP
