@@ -5,3 +5,7 @@ To jest plik README. W ankiecie przegłosowaliście ten sposób przeprowadzania 
 Nie widzę wszystkich raportów na kalendarzu Google. Naprawcie to. ~RG
 
 Raporty zostaną  uzupełnione jutro ze względu na późną  porę i poranne zajęcia. ~BB
+
+14 maja
+Chciałbym, żebyście zrobili swojego ostatniego commita dzisiaj, a najpóźniej jutro przed zajęciami z analizy, bo chcę skończyć prezentację przeglądu sprintu. W czwartek już nie zdążę.
+~RG
