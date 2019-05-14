@@ -30,7 +30,13 @@ int main() {
         std::cout << "19.modulo" << std::endl;
         std::cout << "20.floor" << std::endl;
         std::cout << "21.Zaokraglenie liczby w gore" << std::endl;
-        std::cout << "21.Silnia" << std::endl;
+        std::cout << "22.Silnia" << std::endl;
+        std::cout << "23.Zamiana na stopnie" << std::endl;
+        std::cout << "24.Zamiana na radiany" << std::endl;
+        std::cout << "25.Potegowanie" << std::endl;
+        std::cout << "26.Pierwiastkowanie" << std::endl;
+        std::cout << "27.Logarytm naturalny" << std::endl;
+        std::cout << "28.Logarytm dziesietny" << std::endl;
 
 
         std::cin >> nrdzial;
@@ -337,6 +343,90 @@ int main() {
 
 
                 std::cout << "                  Silnia  (" << liczba28 << ") =" << factorial( liczba28)<< std::endl
+                          << std::endl;
+
+                break;
+
+            case 23 :
+
+                float liczba29;
+
+                std::cout << "Podaj  kąt" << std::endl;
+                std::cin >> liczba29;
+
+
+                std::cout << "                  Zamieniono na stopnie  (" << liczba29 << ") =" << degrees( liczba29)<< std::endl
+                          << std::endl;
+
+                break;
+
+            case 24 :
+
+                float liczba30;
+
+                std::cout << "Podaj  kąt" << std::endl;
+                std::cin >> liczba30;
+
+
+                std::cout << "                  Zamieniono na radiany  (" << liczba30 << ") =" << radians( liczba30)<< std::endl
+                          << std::endl;
+
+                break;
+
+            case 25 :
+
+                int liczba31;
+                float liczba32;
+
+                std::cout << "Podaj  liczbe 1" << std::endl;
+                std::cin >> liczba31;
+                std::cout <<std::endl<< "Podaj  potege" << std::endl;
+                std::cin >> liczba32;
+
+
+                std::cout << "                  Wynik =" << potega((float) liczba31, (float) liczba32)<< std::endl
+                          << std::endl;
+
+                break;
+
+            case 26 :
+
+                int liczba33;
+                float liczba34;
+
+                std::cout << "Podaj  stopien pierwiastka" << std::endl;
+                std::cin >> liczba33;
+                std::cout <<std::endl<< "Podaj  liczbe" << std::endl;
+                std::cin >> liczba34;
+
+
+                std::cout << "                  Wynik =" << pierw((float) liczba33, (float) liczba34)<< std::endl
+                          << std::endl;
+
+                break;
+
+            case 27 :
+
+                float liczba35;
+
+                std::cout << "Podaj  liczbe" << std::endl;
+                std::cin >> liczba35;
+
+
+                std::cout << "                  ln(" << liczba35 << ") =" << ln(liczba35)<< std::endl
+                          << std::endl;
+
+                break;
+
+            case 28 :
+
+                float liczba36;
+
+                std::cout << "Podaj  liczbe" << std::endl;
+                std::cin >> liczba36;
+
+
+                std::cout << "                  log10(" << liczba36 << ") =" << log_10(liczba36)<< std::endl
                           << std::endl;
 
                 break;
