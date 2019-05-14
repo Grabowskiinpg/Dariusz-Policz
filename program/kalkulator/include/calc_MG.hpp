@@ -203,4 +203,24 @@ private:
     std::vector<Vector<T>> matrix_;
 };
 
+template<typename T>
+T det(Matrix<T>& m){ //pytanie czy przez referencję
+    //pamiętać o tym, że musi być kwadratowa
+    T det = 1;
+
+    for(std::size_t i = 0; i < m.size() - 1; i++){
+        for(std::size_t j = i + 1; j < m.size(); j++){
+            for(std::size_t k = i + 1; k < m.size(); k++){
+                m[j][k] -= m[j][i] / m[i][i] * m[i][k];
+            }
+        }
+    }
+
+    for(std::size_t l = 0; l < m.size(); l++){
+        det *= m[l][l];
+    }
+
+    return det;
+}
+
 #endif //KALKULATOR_CALC_MG_HPP

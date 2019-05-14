@@ -7,8 +7,8 @@
 # include "calc_MG.hpp"
 
 
-template<typename T>
-class Monomial{ //jednomian
+/*template<typename T>
+class Monomial{ //jednomian*/
 
 /*class Monomial{ //jednomian
 private:

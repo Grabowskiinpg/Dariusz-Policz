@@ -4,6 +4,7 @@
 
 #include "calc_MGr.hpp"
 
+/*
 template<typename T>
 Polynomial<T>::Polynomial(const std::vector<Monomial<T>>& vector){
     int max_ind=0;
@@ -18,4 +19,4 @@ Polynomial<T>::Polynomial(const std::vector<Monomial<T>>& vector){
     for(Monomial<T> monomial : vector) {
         polynomial_[monomial.get_index()].
     }
-}
+}*/

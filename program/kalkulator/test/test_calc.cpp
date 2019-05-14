@@ -177,3 +177,15 @@ TEST(CalcTest, Matrix) {
     EXPECT_EQ(m[1][0], 21);
     EXPECT_EQ(m[1][1], 22);
 }
+
+TEST(CalcTest, MatrixDet) {
+    Matrix<int> m(std::vector<std::vector<int>>{
+            std::vector<int>{1, 0, 0, 0},
+            std::vector<int>{0, 2, 0, 0},
+            std::vector<int>{0, 0, 3, 0},
+            std::vector<int>{0, 0, 0, 4},
+    });
+
+    ASSERT_EQ(m.size(), 4U);
+    EXPECT_EQ(det<int> (m), 24);
+}
