@@ -190,4 +190,11 @@ TEST(CalcTest, MatrixDet) {
     EXPECT_EQ(det<int> (m), 24);
 }
 
+TEST(CalcTest, Sec) {
+    EXPECT_EQ(sec<double>(M_PI / 3), 2) ;
+}
+
+TEST(CalcTest, Cosec) {
+    EXPECT_EQ(cosec<double>(M_PI / 4), sqrt(2)) ;
+}
 
