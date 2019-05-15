@@ -145,3 +145,11 @@ TEST(CalcTest, Vector){
     EXPECT_EQ(v[1], 2);
     EXPECT_EQ(v[2], 3);
 }
+
+TEST(CalcTest, Sec) {
+    EXPECT_EQ(sec<double>(M_PI / 3), 2) ;
+}
+
+TEST(CalcTest, Cosec) {
+    EXPECT_EQ(cosec<double>(M_PI / 4), sqrt(2)) ;
+}
