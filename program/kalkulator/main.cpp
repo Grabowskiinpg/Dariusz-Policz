@@ -441,6 +441,30 @@ int main() {
                 std::cout << "                  sec(" << liczba37 << ") =" << sec((float)liczba37)<< std::endl << std::endl;
 
                 break;
+                
+             case 29 :
+
+                float liczba37;
+
+                std::cout << "Podaj  kat" << std::endl;
+                std::cin >> liczba37;
+
+
+                std::cout << "                  sec(" << liczba37 << ") =" << sec((float)liczba37)<< std::endl << std::endl;
+
+                break;
+
+            case 30 :
+
+                float liczba38;
+
+                std::cout << "Podaj  kat" << std::endl;
+                std::cin >> liczba38;
+
+
+                std::cout << "                  cosec(" << liczba38 << ") =" << cosec((float)liczba38)<< std::endl << std::endl;
+
+                break;
 
             case 30 :
 

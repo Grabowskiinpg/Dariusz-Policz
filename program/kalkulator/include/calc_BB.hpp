@@ -24,6 +24,19 @@ float ln(int x);  // Logarytm naturalny
 
 float log_10(int x);  // Logarytm dziesiętny
 
+template<typename T>
+T sec(T x)
+{
+    return 1/std::cos(x);
+}
+
+template<typename T>
+T cosec(T x)
+{
+    return 1/std::sin(x);
+}
+
+
 
 template<typename T>
 T sec(T x)
