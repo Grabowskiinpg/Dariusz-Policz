@@ -38,17 +38,6 @@ T cosec(T x)
 
 
 
-template<typename T>
-T sec(T x)
-{
-    return 1/std::cos(x);
-}
-
-template<typename T>
-T cosec(T x)
-{
-    return 1/std::sin(x);
-}
 
 
 #endif //PROGRAM_CAL_BB_HPP
