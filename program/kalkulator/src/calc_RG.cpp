@@ -13,7 +13,7 @@ long factorial(float fac) {
     return 0; //to edit
 }
 
-// jeszcze testy do poniższych (szablony?)
+// poniższe 3 funkcje już chyba ktoś napisał i przetestował
 double degrees(double rad){
     return rad*180/M_PI;
 }
