@@ -189,3 +189,10 @@ TEST(CalcTest, Cosec) {
     EXPECT_EQ(cosec<double>(M_PI / 4), sqrt(2)) ;
 }
 
+TEST(CalcTest, Skalar){
+    Vector<double> v1({-1, 0, 5});
+    Vector<double> v2({3, 3, 3});
+    EXPECT_EQ(skalar(v1, v2), 12.0);
+    Vector<double> v3({0, 1.5});
+    EXPECT_EQ(skalar(v1, v3), -1.0); //przydałoby się coś jeszcze
+}

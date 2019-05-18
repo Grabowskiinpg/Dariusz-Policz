@@ -7,7 +7,7 @@
 
 #include "calc_MG.hpp"
 
-
+/*
 class Monomial{ //jednomian
 private:
     double numeric_factor_;
@@ -45,6 +45,6 @@ public:
     typename std::vector<Monomial>::const_iterator end() const { return polynomial_.cend(); }
 
 };
-
+*/
 
 #endif //KALKULATOR_CALC_MGR_HPP
