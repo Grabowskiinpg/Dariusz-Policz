@@ -3,3 +3,8 @@
 //
 
 #include "calc_MGr.hpp"
+
+Monomial dirativeOfMonomial(const Monomial& m){
+    Monomial deratived(m.get_index()*m.get_numeric(),m.get_index()-1);
+    return deratived;
+}

@@ -2,6 +2,7 @@
 #include "../include/calc_RG.hpp"
 #include "../include/calc_MG.hpp"
 #include "../include/calc_BB.hpp"
+#include "../include/calc_MGr.hpp"
 #include <gmock/gmock.h>
 
 TEST(CalcTest, Sum){
@@ -195,4 +196,14 @@ TEST(CalcTest, Skalar){
     EXPECT_EQ(skalar(v1, v2), 12.0);
     Vector<double> v3({0, 1.5});
     EXPECT_EQ(skalar(v1, v3), -1.0); //przydałoby się coś jeszcze
+}
+
+TEST(CalcTest, DerativationM){
+    Monomial m1 (5,10);
+    Monomial m2 (2.5,1.5);
+    EXPECT_EQ(dirativeOfMonomial(m1).get_numeric(),50);
+    EXPECT_EQ(dirativeOfMonomial(m2).get_numeric(),1.5*2.5);
+    EXPECT_EQ(dirativeOfMonomial(m1).get_index(),9);
+    EXPECT_EQ(dirativeOfMonomial(m2).get_index(),0.5);
+
 }

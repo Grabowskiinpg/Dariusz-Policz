@@ -7,16 +7,17 @@
 
 #include "calc_MG.hpp"
 
-/*
 class Monomial{ //jednomian
 private:
     double numeric_factor_;
-    int index_;
+    double index_;
 public:
-    Monomial(double numeric_factor, int index):numeric_factor_(numeric_factor),index_(index){}
-    Monomial(double numeric_factor):Monomial(numeric_factor,1){}
-    Monomial(int index): Monomial(1,index){}
+    Monomial(double numeric_factor, double index):numeric_factor_(numeric_factor),index_(index){}
+    Monomial(double index): Monomial(1,index){}
     Monomial():Monomial(1,1){}
+
+    double get_index()  const{return index_;}
+    double get_numeric() const{return numeric_factor_;}
 };
 
 class Polynomial{ //wielomian
@@ -45,6 +46,8 @@ public:
     typename std::vector<Monomial>::const_iterator end() const { return polynomial_.cend(); }
 
 };
-*/
+
+Monomial dirativeOfMonomial(const Monomial& m);
+
 
 #endif //KALKULATOR_CALC_MGR_HPP
