@@ -190,12 +190,12 @@ TEST(CalcTest, Cosec) {
     EXPECT_EQ(cosec<double>(M_PI / 4), sqrt(2)) ;
 }
 
-TEST(CalcTest, Skalar){
+TEST(CalcTest, Skalmultip){
     Vector<double> v1({-1, 0, 5});
     Vector<double> v2({3, 3, 3});
-    EXPECT_EQ(skalar(v1, v2), 12.0);
+    EXPECT_EQ(skalmultip(v1, v2), 12.0);
     Vector<double> v3({0, 1.5});
-    EXPECT_EQ(skalar(v1, v3), -1.0); //przydałoby się coś jeszcze
+    EXPECT_EQ(skalmultip(v1, v3), -1.0); //przydałoby się coś jeszcze
 }
 
 TEST(CalcTest, DerativationM){
@@ -207,3 +207,14 @@ TEST(CalcTest, DerativationM){
     EXPECT_EQ(dirativeOfMonomial(m2).get_index(),0.5);
 
 }
+
+/*TEST(CalcTest, Vecmultip){
+    Vector<double> v1({-1, 0, 5});
+    Vector<double> v2({3, 3, 3});
+    EXPECT_EQ(vecmultip(v1, v2), 12.0);
+    
+    
+    
+    Vector<double> v3({0, 1.5});
+    EXPECT_EQ(skalmultip(v1, v3), -1.0); //nieskończony test
+}*/
