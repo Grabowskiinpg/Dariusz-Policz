@@ -207,6 +207,15 @@ TEST(CalcTest, DerativationM){
     EXPECT_EQ(dirativeOfMonomial(m2).get_index(),0.5);
 
 }
+TEST(CalcTest, IntegrationM){
+    Monomial m1 (5,10);
+    Monomial m2 (2.5,1.5);
+    EXPECT_EQ(integralOfMonomial(m1).get_numeric(),5.0/11.0);
+    EXPECT_EQ(integralOfMonomial(m2).get_numeric(),2.5/2.5);
+    EXPECT_EQ(integralOfMonomial(m1).get_index(),11);
+    EXPECT_EQ(integralOfMonomial(m2).get_index(),2.5);
+
+}
 
 /*TEST(CalcTest, Vecmultip){
     Vector<double> v1({-1, 0, 5});

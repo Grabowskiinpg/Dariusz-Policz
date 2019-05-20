@@ -49,5 +49,7 @@ public:
 
 Monomial dirativeOfMonomial(const Monomial& m);
 
+Monomial integralOfMonomial(const Monomial& m);
+
 
 #endif //KALKULATOR_CALC_MGR_HPP
