@@ -217,13 +217,11 @@ TEST(CalcTest, IntegrationM){
 
 }
 
-/*TEST(CalcTest, Vecmultip){
+TEST(CalcTest, Vecmultip){
     Vector<double> v1({-1, 0, 5});
-    Vector<double> v2({3, 3, 3});
-    EXPECT_EQ(vecmultip(v1, v2), 12.0);
-    
-    
-    
-    Vector<double> v3({0, 1.5});
-    EXPECT_EQ(skalmultip(v1, v3), -1.0); //nieskończony test
-}*/
+    Vector<double> v2({3, 2, 1});
+    Vector<double> result(vecmultip(v1, v2));
+    EXPECT_EQ(result[0], -10);
+    EXPECT_EQ(result[1], 16.0);
+    EXPECT_EQ(result[2], -2.0);
+}
