@@ -29,9 +29,13 @@ double skalmultip(const Vector<T>& v1, const Vector<T>& v2){
 
 template<typename T>
 Vector<T> vecmultip(const Vector<T>& v1, const Vector<T>& v2){ //do testów
-    if(v1.size!=3 || v1.size()!=v1.size()) return {};
+    if(v1.size()!=3 || v1.size()!=v2.size()) return {};
     Vector<T> result({v1[1]*v2[2]-v1[2]*v2[1], v1[2]*v2[0]-v1[0]*v2[2], v1[0]*v2[1]-v1[1]*v2[0]});
     return result;
 }
+
+//dodawanie i odejmowanie liczb zespolonych polega na użyciu szblonu funkcji z pliku calc_MG.hpp:
+//Vector<T> add_vectors(const Vector<T>& v1, const Vector<T>& v2)
+//pierwsza składowa jest liczbą Re, a druga liczbą Im
 
 #endif //KALKULATOR_CALC_RG_HPP
