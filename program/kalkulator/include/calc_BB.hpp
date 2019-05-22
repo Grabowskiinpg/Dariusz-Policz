@@ -36,6 +36,8 @@ T cosec(T x)
     return 1/std::sin(x);
 }
 
+int pochw(int x , int ly[], int lt[]);
+
 
 
 
