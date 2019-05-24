@@ -216,7 +216,12 @@ TEST(CalcTest, IntegrationMI){
     EXPECT_EQ(integralOfMonomialindefined(m2).get_index(),2.5);
 
 }
-
+TEST(CalcTest, IntegrationMI2){
+    Monomial m1 (5,10);
+    Monomial m2 (2.5,1.5);
+    EXPECT_EQ(integralOfMonomial(m1,-1,2),10245.0/11.0);
+    EXPECT_EQ(integralOfMonomial(m2,0,2),pow(2,5.0/2));
+}
 
 
 /*TEST(CalcTest, Vecmultip){
@@ -229,4 +234,4 @@ TEST(CalcTest, Vecmultip){
     EXPECT_EQ(result[0], -10);
     EXPECT_EQ(result[1], 16.0);
     EXPECT_EQ(result[2], -2.0);
-}
+}*/

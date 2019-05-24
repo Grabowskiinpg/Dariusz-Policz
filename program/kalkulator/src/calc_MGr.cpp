@@ -15,5 +15,5 @@ Monomial integralOfMonomialindefined(const Monomial& m){
 }
 double integralOfMonomial(const Monomial& m, double start, double end){
     Monomial integrated= integralOfMonomialindefined(m);
-    return integrated.get_numeric()*(pow(start,integrated.get_numeric())-pow(end,integrated.get_numeric()));
+    return integrated.get_numeric()*(pow(end,integrated.get_index())-pow(start,integrated.get_index()));
 }
