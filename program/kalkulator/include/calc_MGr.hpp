@@ -53,5 +53,9 @@ Monomial integralOfMonomialindefined(const Monomial& m);
 
 double integralOfMonomial(const Monomial& m, double start, double end);
 
+/*
+template<typename T>
+Matrix<T> add_matrix(const Matrix& m1,const Matrix& m2);
+*/
 
 #endif //KALKULATOR_CALC_MGR_HPP
