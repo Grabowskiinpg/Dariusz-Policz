@@ -8,7 +8,6 @@
 #include <iostream>
 #include <functional>
 #include <numeric>
-#include <sstream>
 //Podstawowe funckje (prototypy)
 template<typename T>
 T sum(T a , T b){
@@ -216,6 +215,24 @@ void scientific_notation(T x){
     std::cout.setf(std::ios::scientific);
     std::cout << x;
     std::cout.unsetf(std::ios::scientific);
+}
+
+template<typename T>
+T power_10(T x){
+   return std::pow(10, x);
+}
+template<typename T>
+T binomial_coefficient(T x, T y){
+    /*if(x < y || y < 0)
+    {
+        return -1;
+    }*/ //pamiętać o tym
+    if(y == 0 || y == x)
+    {
+        return 1;
+    }
+    else return binomial_coefficient<T> (x-1, y-1) + binomial_coefficient<T> (x-1, y);
+
 }
 
 

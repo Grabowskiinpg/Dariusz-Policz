@@ -41,19 +41,19 @@ TEST(CalcTest, Cot){
     EXPECT_EQ(cot<double> (M_PI/4), 1/tan<double> (M_PI/4));
 }
 
-TEST(ClacTest, Asin){
+TEST(CalcTest, Asin){
     EXPECT_EQ(asin<double> (1), M_PI/2);
 }
 
-TEST(ClacTest, Acos){
+TEST(CalcTest, Acos){
     EXPECT_EQ(acos<double> (sqrt(2)/2), M_PI/4);
 }
 
-TEST(ClacTest, Atan){
+TEST(CalcTest, Atan){
     EXPECT_EQ(atan<double> (1), M_PI/4);
 }
 
-TEST(ClacTest, Acot){
+TEST(CalcTest, Acot){
     EXPECT_EQ(acot<double> (sqrt(3)), M_PI/2-M_PI/3);
 }
 
@@ -70,59 +70,59 @@ TEST(CalcTest, Factorial){
     EXPECT_EQ(factorial(-6.789), 0);
 }
 
-TEST(ClacTest, Cosh){
+TEST(CalcTest, Cosh){
     EXPECT_EQ(cosh<double> (0), 1);
 }
 
-TEST(ClacTest, Sinh){
+TEST(CalcTest, Sinh){
     EXPECT_EQ(sinh<double> (0), 0);
 }
 
-TEST(ClacTest, Tanh){
+TEST(CalcTest, Tanh){
     EXPECT_EQ(tanh<double> (0), 0);
 }
 
-TEST(ClacTest, Coth){
+TEST(CalcTest, Coth){
     //*
     EXPECT_EQ(coth<double> (2), 1/tanh<double> (2));
 }
 
 
-TEST(CalTest, Pow){
+TEST(CalcTest, Pow){
     EXPECT_EQ(pow <int> (2,3),8);          //potęgowanie test
 }
 
-TEST(CalTest, Pierw){
+TEST(CalcTest, Pierw){
     EXPECT_EQ(pierw  (3,-64), -4);          //pierwiastkowanie z dowolnego stopnia test
 }
 
 
-TEST(CalTest, Ln) {
+TEST(CalcTest, Ln) {
     EXPECT_EQ(ln(1), 0);   // Logarytm naturalny test
 }
 
 
-TEST(CalTest, Log_10) {
+TEST(CalcTest, Log_10) {
     EXPECT_EQ(log_10(100), 2);  // Logarytm dziesiętny test
 }
 
-TEST(ClacTest, Abs){
+TEST(CalcTest, Abs){
     EXPECT_EQ(abs<int> (-2), 2);
 }
 
-TEST(ClacTest, Modulo){
+TEST(CalcTest, Modulo){
     EXPECT_EQ(modulo<int> (5, 3), 2);
 }
 
-TEST(ClacTest, Floor){
+TEST(CalcTest, Floor){
     EXPECT_EQ(floor<double> (2.123), 2);
 }
 
-TEST(ClacTest, Ceil){
+TEST(CalcTest, Ceil){
     EXPECT_EQ(ceil<double> (2.123), 3);
 }
 
-TEST(ClacTest, Mantysa){
+TEST(CalcTest, Mantysa){
     EXPECT_EQ(mantysa<double> (2.425), 0.425);
 }
 
@@ -235,4 +235,12 @@ TEST(CalcTest, Vecmultip){
     EXPECT_EQ(result[1], 16.0);
     EXPECT_EQ(result[2], -2.0);
 }*/
+
+TEST(CalcTest, Power10){
+    EXPECT_EQ(power_10<int> (4), 10000);
+}
+
+TEST(CalcTest, BinomialCoefficient){
+    EXPECT_EQ(binomial_coefficient<int> (4, 2), 6);
+}
 
