@@ -8,6 +8,7 @@
 #include <iostream>
 #include <functional>
 #include <numeric>
+#include <sstream>
 //Podstawowe funckje (prototypy)
 template<typename T>
 T sum(T a , T b){
@@ -209,5 +210,14 @@ private:
 T det(Matrix<T>& m){ //pytanie czy przez referencję
     //pamiętać o tym, że musi być kwadratowa
 }*/
+
+template<typename T>
+void scientific_notation(T x){
+    std::cout.setf(std::ios::scientific);
+    std::cout << x;
+    std::cout.unsetf(std::ios::scientific);
+}
+
+
 
 #endif //KALKULATOR_CALC_MG_HPP

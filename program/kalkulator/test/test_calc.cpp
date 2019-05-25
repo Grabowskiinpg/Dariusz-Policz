@@ -235,3 +235,4 @@ TEST(CalcTest, Vecmultip){
     EXPECT_EQ(result[1], 16.0);
     EXPECT_EQ(result[2], -2.0);
 }*/
+
