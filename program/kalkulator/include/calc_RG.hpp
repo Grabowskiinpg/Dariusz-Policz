@@ -3,6 +3,7 @@
 
 #include <math.h> //M_PI oraz M_E
 #include <calc_MG.hpp>
+#include <calc_MGr.hpp>
 
 long factorial(float fac);
 
@@ -34,8 +35,17 @@ Vector<T> vecmultip(const Vector<T>& v1, const Vector<T>& v2){ //do testów
     return result;
 }
 
-//dodawanie i odejmowanie liczb zespolonych polega na użyciu szblonu funkcji z pliku calc_MG.hpp:
+//dodawanie i odejmowanie liczb zespolonych polega na użyciu szablonu funkcji z pliku calc_MG.hpp:
 //Vector<T> add_vectors(const Vector<T>& v1, const Vector<T>& v2)
 //pierwsza składowa jest liczbą Re, a druga liczbą Im
+
+/*template <typename T>
+double integralOfPolynomial(const Matrix<T>& mat, double start, double end){
+    double result = 0;  //czy trzeba coś sprawdzić? ...jeszcze testy
+    for(const auto e : mat){
+        result += integralOfMonomial(e, start, end);
+    }
+    return result;
+}*/
 
 #endif //KALKULATOR_CALC_RG_HPP
