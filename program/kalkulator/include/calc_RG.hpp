@@ -39,13 +39,6 @@ Vector<T> vecmultip(const Vector<T>& v1, const Vector<T>& v2){ //do testów
 //Vector<T> add_vectors(const Vector<T>& v1, const Vector<T>& v2)
 //pierwsza składowa jest liczbą Re, a druga liczbą Im
 
-/*template <typename T>
-double integralOfPolynomial(const Matrix<T>& mat, double start, double end){
-    double result = 0;  //czy trzeba coś sprawdzić? ...jeszcze testy
-    for(const auto e : mat){
-        result += integralOfMonomial(e, start, end);
-    }
-    return result;
-}*/
+double integralOfPolynomial(const Polynomial& poly, double start, double end);
 
 #endif //KALKULATOR_CALC_RG_HPP

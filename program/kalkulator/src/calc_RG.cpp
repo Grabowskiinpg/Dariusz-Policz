@@ -25,3 +25,9 @@ double radians(double deg){
 double exponent(double x){
     return std::exp(x);
 }
+
+double integralOfPolynomial(const Polynomial& poly, double start, double end){
+    double result = 0;
+    for(const auto e : poly) result += integralOfMonomial(e, start, end);
+    return result;
+}

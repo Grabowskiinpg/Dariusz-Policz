@@ -223,9 +223,6 @@ TEST(CalcTest, IntegrationMI2){
     EXPECT_EQ(integralOfMonomial(m2,0,2),pow(2,5.0/2));
 }
 
-
-/*TEST(CalcTest, Vecmultip){
-
 TEST(CalcTest, Vecmultip){
 
     Vector<double> v1({-1, 0, 5});
@@ -234,7 +231,7 @@ TEST(CalcTest, Vecmultip){
     EXPECT_EQ(result[0], -10);
     EXPECT_EQ(result[1], 16.0);
     EXPECT_EQ(result[2], -2.0);
-}*/
+}
 
 TEST(CalcTest, Power10){
     EXPECT_EQ(power_10<int> (4), 10000);
@@ -244,3 +241,14 @@ TEST(CalcTest, BinomialCoefficient){
     EXPECT_EQ(binomial_coefficient<int> (4, 2), 6);
 }
 
+/*TEST(CalcTest, IntegralOfPolynomial){
+    std::vector<Monomial> v;
+    Monomial m1(1.2, 2.5);
+    v.push_back(m1);
+    Monomial m2(1, 0);
+    v.push_back(m2);
+    Monomial m3(0, -3);
+    v.push_back(m3);
+    Polynomial poly(v);
+    EXPECT_EQ(integralOfPolynomial(poly, 1, 5), (12/35)*pow(5, 3.5)+5-12/35-1);
+}*/
