@@ -8,6 +8,7 @@
 #include <iostream>
 #include <functional>
 #include <numeric>
+#include <array>
 //Podstawowe funckje (prototypy)
 template<typename T>
 T sum(T a , T b){
@@ -221,6 +222,7 @@ template<typename T>
 T power_10(T x){
    return std::pow(10, x);
 }
+
 template<typename T>
 T binomial_coefficient(T x, T y){
     /*if(x < y || y < 0)
@@ -235,6 +237,37 @@ T binomial_coefficient(T x, T y){
 
 }
 
+std::string international_system_of_units(std::string x){
+    std::array<std::string, 7> basic_units {"m", "s", "K", "A", "kg", "mol", "cd"};
+    std::string y;
+    for(std::string& element : basic_units){
+       if(x == element){
+            y = element;
+       }
+    }
+    return y;
+}
+
+/*std::string metric_prefix_mg(double x){
+    std::array<std::string, 10> m_p_1 {"deka", "hekto", "kilo", "mega", "giga", "tera", "peta", "eksa", "zetta", "jotta"};
+    std::array<std::string, 10> m_p_2 {"decy", "centy", "mili", "mikro", "nano", "piko", "femto", "atto", "zepto", "jokto"};
+    std::size_t counter = 0;
+    if(x > 10 || x < -10){
+        while ((x > 10) || (x < -10)) {
+            x /= 10;
+            counter++;
+        }
+        return m_p_1[counter];
+    }
+    else if((x < 1 && x > 0) || (x > -1 && x < 0)){
+        while ((x < 10 && x > 1) || (x < -1 && x > -10)) {
+            x *= 10;
+            counter++;
+        }
+        return m_p_2[counter];
+    }
+    return NULL;
+}*/
 
 
 #endif //KALKULATOR_CALC_MG_HPP

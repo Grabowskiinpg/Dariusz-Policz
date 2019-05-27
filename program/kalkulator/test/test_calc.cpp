@@ -252,3 +252,12 @@ TEST(CalcTest, BinomialCoefficient){
     Polynomial poly(v);
     EXPECT_EQ(integralOfPolynomial(poly, 1, 5), (12/35)*pow(5, 3.5)+5-12/35-1);
 }*/
+
+TEST(CalcTest, InternationalSystemofUnits){
+    EXPECT_EQ(international_system_of_units("mol"), "mol");
+}
+
+/*
+TEST(CalcTest, MetricPrefixMG){
+    EXPECT_EQ(metric_prefix_mg(10), "deka");
+}*/
