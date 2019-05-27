@@ -267,7 +267,7 @@ std::string international_system_of_units(std::string x){
         return m_p_2[counter];
     }
     return NULL;
-}*/
+}*/ //przetestować
 
 
 #endif //KALKULATOR_CALC_MG_HPP
