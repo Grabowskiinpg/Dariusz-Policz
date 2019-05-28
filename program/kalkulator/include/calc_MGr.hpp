@@ -53,9 +53,28 @@ Monomial integralOfMonomialindefined(const Monomial& m);
 
 double integralOfMonomial(const Monomial& m, double start, double end);
 
-/*
+
 template<typename T>
-Matrix<T> add_matrix(const Matrix& m1,const Matrix& m2);
-*/
+Matrix<T> add_matrices(const Matrix<T>& m1, const Matrix<T>& m2) {
+    Matrix<T> m_sum(m1);
+    std::transform(m1.begin(), m1.end(), m2.begin(), m_sum.begin(),
+                   [](const auto& v1, const auto& v2) { return add_vectors(v1, v2); });
+    return m_sum;
+}
+
+template<typename T>
+Matrix<T> multiplication_matrix(const Matrix<T>& m1,const Matrix<T>& m2) {
+    Matrix<T> multi(m1.size(),m2[0].size());
+    for(size_t i=0; i<multi.size();i++){
+        for(size_t j=0;j<multi[i].size();j++){
+            multi[i][j]=0;
+            for(size_t k=0; k<=m2.size();k++){
+                multi[i][j]+=m1[i][k]*m2[k][j];
+            }
+
+        }
+    }
+    return multi;
+}
 
 #endif //KALKULATOR_CALC_MGR_HPP

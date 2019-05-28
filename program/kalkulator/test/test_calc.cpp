@@ -288,3 +288,28 @@ TEST(CalcTest, MetricPrefix){
     //std::cout << *p << " osiem\n";
 
 }
+
+TEST(MatlabMatrixTest, add) {
+    Matrix<int> m1(std::vector<std::vector<int>>{
+            std::vector<int>{1, 2},
+            std::vector<int>{4, 5}
+    });
+
+    Matrix<int> m2(std::vector<std::vector<int>>{
+            std::vector<int>({0, 1}),
+            std::vector<int>({2, 3})
+    });
+
+    auto m_sum = add_matrices(m1, m2);
+
+    ASSERT_EQ(m_sum.size(), 2U);
+
+    ASSERT_EQ(m_sum[0].size(), 2U);
+    EXPECT_EQ(m_sum[0][0], 1);
+    EXPECT_EQ(m_sum[0][1], 3);
+
+    ASSERT_EQ(m_sum[1].size(), 2U);
+    EXPECT_EQ(m_sum[1][0], 6);
+    EXPECT_EQ(m_sum[1][1], 8);
+}
+
