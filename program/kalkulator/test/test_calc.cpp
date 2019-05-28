@@ -254,10 +254,37 @@ TEST(CalcTest, BinomialCoefficient){
 }*/
 
 TEST(CalcTest, InternationalSystemofUnits){
-    EXPECT_EQ(international_system_of_units("mol"), "mol");
+    EXPECT_EQ(international_system_of_units<std::string> ("mol"), "mol");
 }
 
-/*
-TEST(CalcTest, MetricPrefixMG){
-    EXPECT_EQ(metric_prefix_mg(10), "deka");
-}*/
+TEST(CalcTest, MetricPrefix){
+    double *p;
+    double x = -12;
+    p = &x;
+
+    EXPECT_EQ(metric_prefix<std::string> (p), "deka");
+    std::cout << *p << " jeden\n";
+    x = -123;
+    EXPECT_EQ(metric_prefix<std::string> (p), "hekto");
+    std::cout << *p << " dwa\n";
+    x = -1234;
+    EXPECT_EQ(metric_prefix<std::string> (p), "kilo");
+    std::cout << *p << " trzy\n";
+    x = -12345;
+    EXPECT_EQ(metric_prefix<std::string> (p), "kilo");
+    std::cout << *p << " cztery\n";
+    x = -123456;
+    EXPECT_EQ(metric_prefix<std::string> (p), "kilo");
+    std::cout << *p << " piec\n";
+    x = -1234567;
+    EXPECT_EQ(metric_prefix<std::string> (p), "mega");
+    std::cout << *p << " szesc\n";
+    //dalej na pewno działa (dla minusów i plusów)
+    x = 0.12;
+    EXPECT_EQ(metric_prefix<std::string> (p), "decy");
+    std::cout << *p << " siedem\n";
+    x = 0.123;
+    //EXPECT_EQ(metric_prefix<std::string> (p), "centy");
+    //std::cout << *p << " osiem\n";
+
+}

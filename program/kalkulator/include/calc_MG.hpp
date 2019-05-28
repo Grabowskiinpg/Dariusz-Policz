@@ -8,6 +8,7 @@
 #include <iostream>
 #include <functional>
 #include <numeric>
+#include <map>
 #include <array>
 //Podstawowe funckje (prototypy)
 template<typename T>
@@ -237,37 +238,52 @@ T binomial_coefficient(T x, T y){
 
 }
 
-std::string international_system_of_units(std::string x){
+template<typename T>
+T international_system_of_units(T x){
     std::array<std::string, 7> basic_units {"m", "s", "K", "A", "kg", "mol", "cd"};
-    std::string y;
-    for(std::string& element : basic_units){
+    T y;
+    for(T& element : basic_units){
        if(x == element){
             y = element;
        }
     }
     return y;
 }
-
-/*std::string metric_prefix_mg(double x){
-    std::array<std::string, 10> m_p_1 {"deka", "hekto", "kilo", "mega", "giga", "tera", "peta", "eksa", "zetta", "jotta"};
-    std::array<std::string, 10> m_p_2 {"decy", "centy", "mili", "mikro", "nano", "piko", "femto", "atto", "zepto", "jokto"};
+template<typename T>
+T metric_prefix(double* x){
+    std::map<std::size_t, std::string> m_p_1 {{1, "deka"}, {2, "hekto"}, {3, "kilo"}, {6, "mega"}, {9, "giga"}, {12, "tera"}, {15, "peta"}, {18, "eksa"}, {21, "zetta"}, {24, "jotta"}};
+    std::map<std::size_t, std::string> m_p_2 {{1, "decy"}, {2, "centy"}, {3, "mili"}, {6, "mikro"}, {9, "nano"}, {12, "piko"}, {15, "femto"}, {18, "atto"}, {21, "zepto"}, {24, "jokto"}};
     std::size_t counter = 0;
-    if(x > 10 || x < -10){
-        while ((x > 10) || (x < -10)) {
-            x /= 10;
+    std::size_t help;
+    double y = *x;
+    if(y >= 10 || y <= -10){
+        while ((y >= 10) || (y <= -10)) {
+            y /= 10;
             counter++;
+            if(counter == 1 || counter == 2 || counter == 3 || counter == 6 || counter == 9 || counter == 12
+               || counter == 15 || counter == 18 || counter == 21 || counter == 24){
+                help = counter;
+            }
         }
-        return m_p_1[counter];
+        *x = *x / pow(10, help);
+        return m_p_1[help];
     }
-    else if((x < 1 && x > 0) || (x > -1 && x < 0)){
-        while ((x < 10 && x > 1) || (x < -1 && x > -10)) {
-            x *= 10;
+    else if((y < 1 && y > 0) || (y > -1 && y < 0)){
+        while ((y < 1 && y > 0) || (y > -1 && y < 0)){
+            y *= 10;
             counter++;
+            if(counter == 1 || counter == 2 || counter == 3 || counter == 6 || counter == 9 || counter == 12
+               || counter == 15 || counter == 18 || counter == 21 || counter == 24){
+                help = counter;
+            }
         }
-        return m_p_2[counter];
+        *x = *x * pow(10, help);
+        return m_p_2[help];
     }
-    return NULL;
-}*/ //przetestować
+    return "ERROR";
+} //przetestować
+
+
 
 
 #endif //KALKULATOR_CALC_MG_HPP
