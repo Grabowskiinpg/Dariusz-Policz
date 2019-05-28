@@ -241,7 +241,7 @@ TEST(CalcTest, BinomialCoefficient){
     EXPECT_EQ(binomial_coefficient<int> (4, 2), 6);
 }
 
-/*TEST(CalcTest, IntegralOfPolynomial){
+TEST(CalcTest, IntegralOfPolynomial){
     std::vector<Monomial> v;
     Monomial m1(1.2, 2.5);
     v.push_back(m1);
@@ -250,8 +250,10 @@ TEST(CalcTest, BinomialCoefficient){
     Monomial m3(0, -3);
     v.push_back(m3);
     Polynomial poly(v);
-    EXPECT_EQ(integralOfPolynomial(poly, 1, 5), (12/35)*pow(5, 3.5)+5-12/35-1);
-}*/
+    //double result = 12 / 35 * pow(5, 3.5) + 5 - 12 / 35 - 1; //WTF???
+    double result = integralOfMonomial(m1, 1, 5) + integralOfMonomial(m2, 1, 5) + integralOfMonomial(m3, 1, 5);
+    EXPECT_EQ(integralOfPolynomial(poly, 1, 5), result);
+}
 
 TEST(CalcTest, InternationalSystemofUnits){
     EXPECT_EQ(international_system_of_units<std::string> ("mol"), "mol");
