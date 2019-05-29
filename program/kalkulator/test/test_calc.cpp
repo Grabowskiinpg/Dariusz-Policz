@@ -315,7 +315,7 @@ TEST(MatlabMatrixTest, add) {
     EXPECT_EQ(m_sum[1][1], 8);
 }
 
-TEST(CalcTest, IntegralOfPolynomialIndefined){
+TEST(CalcTest, IntegralOfPolynomialIndefinited){
     std::vector<Monomial> v;
     Monomial m1(1.2*2.5, 2.5-1);
     v.push_back(m1);
@@ -334,7 +334,7 @@ TEST(CalcTest, IntegralOfPolynomialIndefined){
     res.push_back(res_3);
     Polynomial check(res);
 
-    Polynomial ret = integralOfPolynomialIndefined(poly);
+    Polynomial ret = integralOfPolynomialIndefinited(poly);
 
     EXPECT_EQ(ret[0].get_index(), check[0].get_index());
     EXPECT_EQ(ret[0].get_numeric(), check[0].get_numeric());

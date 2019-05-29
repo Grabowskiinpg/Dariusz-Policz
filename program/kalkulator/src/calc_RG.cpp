@@ -32,7 +32,7 @@ double integralOfPolynomial(const Polynomial& poly, double start, double end){
     return result;
 }
 
-Polynomial integralOfPolynomialIndefined(const Polynomial& poly){
+Polynomial integralOfPolynomialIndefinited(const Polynomial& poly){
     std::vector<Monomial> result;
     for(const auto& e : poly){
         result.push_back(integralOfMonomialindefined(e));

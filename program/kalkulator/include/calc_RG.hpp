@@ -41,6 +41,6 @@ Vector<T> vecmultip(const Vector<T>& v1, const Vector<T>& v2){ //do testów
 
 double integralOfPolynomial(const Polynomial& poly, double start, double end);
 
-Polynomial integralOfPolynomialIndefined(const Polynomial& poly);
+Polynomial integralOfPolynomialIndefinited(const Polynomial& poly);
 
 #endif //KALKULATOR_CALC_RG_HPP
