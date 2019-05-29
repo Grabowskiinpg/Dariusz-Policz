@@ -315,22 +315,22 @@ TEST(MatlabMatrixTest, add) {
     EXPECT_EQ(m_sum[1][1], 8);
 }
 
-/*TEST(CalcTest, IntegralOfPolynomialIndefined){
+TEST(CalcTest, IntegralOfPolynomialIndefined){
     std::vector<Monomial> v;
-    Monomial m1(1.2, 2.5);
+    Monomial m1(1.2*2.5, 2.5-1);
     v.push_back(m1);
-    Monomial m2(1, 0);
+    Monomial m2(1*1, 1-1);      //Monomial nie liczy całki z 1/x
     v.push_back(m2);
-    Monomial m3(0, -3);
+    Monomial m3(0*-3, -3-1);
     v.push_back(m3);
     Polynomial poly(v);
 
     std::vector<Monomial> res;
-    Monomial res_1(1.2*2.5, 2.5-1);
+    Monomial res_1(1.2, 2.5);
     res.push_back(res_1);
-    Monomial res_2(1*0, 0-1);
+    Monomial res_2(1, 1);
     res.push_back(res_2);
-    Monomial res_3(0*-3, -3-1);
+    Monomial res_3(0, -3);
     res.push_back(res_3);
     Polynomial check(res);
 
@@ -344,4 +344,4 @@ TEST(MatlabMatrixTest, add) {
 
     EXPECT_EQ(ret[2].get_index(), check[2].get_index());
     EXPECT_EQ(ret[2].get_numeric(), check[2].get_numeric());
-}*/
+}
