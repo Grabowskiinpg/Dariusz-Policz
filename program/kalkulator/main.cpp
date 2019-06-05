@@ -509,6 +509,141 @@ int main() {
                 }
                 break;
                 */
+            
+            //poniższe są moje ~RG
+            /*case 31 : { //exponent
+                double x;
+                std::cout << "Podaj wykładnik:" << std::endl;
+                std::cin >> x;
+                std::cout << "e^" << x << " = " << exponent(x) << std::endl << std::endl;
+                break;
+            }
+
+            case 32 : { //skalmultip
+                std::vector<double> vec1, vec2;
+                double input, size;
+                std::cout<< "Podaj ilość składowych wektorów, a następnie ich wartości dla jednego i drugiego wektora:"<< std::endl;
+                std::cin>>size;
+                for(int i = 0; i<size; i++){
+                    std::cin >> input;
+                    vec1.push_back(input);
+                }
+                for(int i = 0; i<size; i++){
+                    std::cin >> input;
+                    vec2.push_back(input);
+                }
+                Vector<double> v1(vec1);
+                Vector<double> v2(vec2);
+                std::cout<<"[";
+                for (const auto& e : vec1) std::cout << e << " ";
+                std::cout << "]•[";
+                for (const auto& e : vec2) std::cout << e << " ";
+                std::cout << "] = " << skalmultip(v1, v2) << std::endl << std::endl;
+                break;
+            }
+
+            case 33 : {//vecmultip
+                std::vector<double> vec1, vec2;
+                double input;
+                std::cout << "Podaj składowe wektorów:" << std::endl;
+                for (int i = 0; i < 3; i++){
+                    std::cin>>input;
+                    vec1.push_back(input);
+                }
+                for (int i = 0; i < 3; i++){
+                    std::cin>>input;
+                    vec2.push_back(input);
+                }
+                Vector<double> v3(vec1);
+                Vector<double> v4(vec2);
+                std::cout<<"[";
+                for (const auto& e : vec1) std::cout << e << " ";
+                std::cout << "]×[";
+                for (const auto& e : vec2) std::cout << e << " ";
+                std::cout << "] = [";
+                Vector<double> v1(vec1);
+                Vector<double> v2(vec2);
+                Vector<double> res = vecmultip(v1, v2);
+                for (const auto& e : res) std::cout << e << " ";
+                std::cout << "]" << std::endl << std::endl;
+                break;
+            }
+
+            case 34 : { //remember
+                double x;
+                std::cout << "Podaj liczbę do zapamiętania:" << std::endl;
+                std::cin >> x;
+                remember(Memo, x);
+                std::cout << "Zapamiętano liczbę równą " << Memo << std::endl << std::endl;
+                break;
+            }
+
+            case 35 : { //add or subtract complex
+                std::vector<double> vec1, vec2;
+                double input;
+                std::cout << "Podaj części rzeczywiste i urojone liczb zespolonych:" << std::endl;
+                for (int i = 0; i < 2; i++) {
+                    std::cin >> input;
+                    vec1.push_back(input);
+                }
+                for (int i = 0; i < 2; i++) {
+                    std::cin >> input;
+                    vec2.push_back(input);
+                }
+                Vector<double> v5(vec1);
+                Vector<double> v6(vec2);
+                Vector<double> v7(add_vectors(v5, v6));
+                std::cout << v5[0] << " + " << v5[1] << "i + " << v6[0] << " + " << v6[1] << "i = ";
+                std::cout << v7[0] << " + " << v7[1] << "i" << std::endl << std::endl;
+                break;
+            }
+
+            case 36 : { //integral poly
+                std::vector<Monomial> v;
+                double numeric, index, size;
+                std::cout<< "Podaj rozmiar wielomianu,a następnie kolejne współczynniki i wykładniki:";
+                std::cin>>size;
+                for(int i = 0; i< size; i++) {
+                    std::cin >> numeric;
+                    std::cin >> index;
+                    Monomial m(numeric, index);
+                    v.push_back(m);
+                }
+                Polynomial poly(v);
+                std::cout << "Teraz podaj dolną i górną granicę całkowania:";
+                double start, end;
+                std::cin >> start;
+                std::cin >> end;
+                std::cout <<"Ta całka jest równa "<< integralOfPolynomial(poly, start, end) << std::endl << std::endl;
+                break;
+            }
+
+            case 37 : {  //integral poly indefitited
+                std::vector<Monomial> v;
+                float numeric, index, size;
+                std::cout<< "Podaj rozmiar wielomianu, a następnie jego kolejne współczynniki i wykładniki:";
+                std::cin>>size;
+                for(int i =0; i<size;i++) {
+                    std::cin>>numeric;
+                    std::cin >> index;
+                    Monomial m(numeric, index);
+                    v.push_back(m);
+                }
+                std::cout<<"∫(";
+                Polynomial poly(v);
+                for (std::size_t i = 0; i<size; i++) {
+                    std::cout << poly[i].get_numeric() << "x^" << poly[i].get_index();
+                    if(i != size - 1) std::cout<<" + ";
+                }
+                std::cout << ")dx = ";
+                Polynomial res(integralOfPolynomialIndefinited(poly));
+                for (std::size_t i = 0; i<size; i++) {
+                    std::cout << res[i].get_numeric() << "x^" << res[i].get_index();
+                    if(i != size - 1) std::cout<<" + ";
+                }
+                std::cout <<" + C"<< std::endl << std::endl;
+                break;
+            }*/
 
         }
 
