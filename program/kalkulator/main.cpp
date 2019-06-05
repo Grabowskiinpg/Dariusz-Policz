@@ -39,12 +39,13 @@ int main() {
         std::cout << "28.Logarytm dziesietny" << std::endl;
         std::cout << "29.sec" << std::endl;
         std::cout << "30.cosec" << std::endl;
+        std::cout << "31.Operacje  na jednomianach" << std::endl;
 
 
         std::cin >> nrdzial;
 
 
-        if (nrdzial < 1 || nrdzial > 30) {
+        if (nrdzial < 1 || nrdzial > 31) {
             std::cout << "Niestety wybrales zly zakres" << std::endl;
 
             return 0;
@@ -458,10 +459,56 @@ int main() {
 
                 break;
 
+            /*
+            case 31 :
+
+                int nrdzial2;
+
+                double index;
+                double wsp;
+
+                std::cout << "Podaj index jednomianu" << std::endl;
+                std::cin >> index;
+                std::cout << "Podaj wspolczynnik" << std::endl;
+                std::cin >> wsp;
+                Monomial m = Monomial(wsp,index);
+                std::cout << "1.Rozniczka" << std::endl;
+                std::cout << "2.Calkowanie" << std::endl;
+                std::cout << "3.Calkowanie oznaczone" << std::endl;
+
+                std::cin >> nrdzial2;
 
 
+                if (nrdzial2 < 1 || nrdzial2 > 3) {
+                    std::cout << "Niestety wybrales zly zakres" << std::endl;
 
+                    return 0;
+                }
 
+                switch (nrdzial2) {
+
+                    case 1 :
+                        Monomial m_wyn = dirativeOfMonomial(m);
+                        std::cout << m_wyn.get_numeric() << "x^" << m_wyn.get_index()<< std::endl<< std::endl;
+                        break;
+                    case 2 :
+                        Monomial m_wyn2 = integralOfMonomialindefined(m);
+                        std::cout << m_wyn2.get_numeric() << "x^" << m_wyn2.get_index()<< std::endl<< std::endl;
+                        break;
+                    case 3 :
+                        double start;
+                        double koniec;
+                        std::cout << "Podaj lewa granice" << std::endl;
+                        std::cin >> start;
+                        std::cout << "Podaj prawa granice" << std::endl;
+                        std::cin >> wsp;
+
+                        double m_wyn3 = integralOfMonomial(m,start,koniec);
+                        std::cout << m_wyn3<< std::endl<< std::endl;
+                        break;
+                }
+                break;
+                */
 
         }
 

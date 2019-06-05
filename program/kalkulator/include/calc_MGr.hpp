@@ -54,6 +54,7 @@ Monomial integralOfMonomialindefined(const Monomial& m);
 double integralOfMonomial(const Monomial& m, double start, double end);
 
 
+
 template<typename T>
 Matrix<T> add_matrices(const Matrix<T>& m1, const Matrix<T>& m2) {
     Matrix<T> m_sum(m1);
@@ -75,6 +76,6 @@ Matrix<T> multiplication_matrix(const Matrix<T>& m1,const Matrix<T>& m2) {
         }
     }
     return multi;
-}
+} // funkcja jeszcze nie dopracowana
 
 #endif //KALKULATOR_CALC_MGR_HPP
