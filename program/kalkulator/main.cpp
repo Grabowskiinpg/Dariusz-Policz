@@ -5,6 +5,7 @@
 #include <iostream>
 
 int main() {
+    double Memo;
     std::cout << "KALKULATOR " << std::endl << std::endl;
     do {
         int nrdzial;
@@ -45,7 +46,7 @@ int main() {
         std::cin >> nrdzial;
 
 
-        if (nrdzial < 1 || nrdzial > 31) {
+        if (nrdzial < 1 || nrdzial > 44) {
             std::cout << "Niestety wybrales zly zakres" << std::endl;
 
             return 0;
@@ -460,7 +461,7 @@ int main() {
                 break;
 
 
-            case 31 :
+            case 31 : {
 
                 int nrdzial2;
 
@@ -471,7 +472,7 @@ int main() {
                 std::cin >> index;
                 std::cout << "Podaj wspolczynnik" << std::endl;
                 std::cin >> wsp;
-                Monomial m = Monomial(wsp,index);
+                Monomial m = Monomial(wsp, index);
                 std::cout << "1.Rozniczka" << std::endl;
                 std::cout << "2.Calkowanie" << std::endl;
                 std::cout << "3.Calkowanie oznaczone" << std::endl;
@@ -511,10 +512,10 @@ int main() {
                     }
                 }
                 break;
-
+            }
             
             //poniższe są moje ~RG
-            /*case 31 : { //exponent
+            case 32 : { //exponent
                 double x;
                 std::cout << "Podaj wykładnik:" << std::endl;
                 std::cin >> x;
@@ -522,7 +523,7 @@ int main() {
                 break;
             }
 
-            case 32 : { //skalmultip
+            case 33 : { //skalmultip
                 std::vector<double> vec1, vec2;
                 double input, size;
                 std::cout<< "Podaj ilość składowych wektorów, a następnie ich wartości dla jednego i drugiego wektora:"<< std::endl;
@@ -545,7 +546,7 @@ int main() {
                 break;
             }
 
-            case 33 : {//vecmultip
+            case 34 : {//vecmultip
                 std::vector<double> vec1, vec2;
                 double input;
                 std::cout << "Podaj składowe wektorów:" << std::endl;
@@ -572,7 +573,7 @@ int main() {
                 break;
             }
 
-            case 34 : { //remember
+            case 35 : { //remember
                 double x;
                 std::cout << "Podaj liczbę do zapamiętania:" << std::endl;
                 std::cin >> x;
@@ -581,7 +582,7 @@ int main() {
                 break;
             }
 
-            case 35 : { //add or subtract complex
+            case 36 : { //add or subtract complex
                 std::vector<double> vec1, vec2;
                 double input;
                 std::cout << "Podaj części rzeczywiste i urojone liczb zespolonych:" << std::endl;
@@ -601,7 +602,7 @@ int main() {
                 break;
             }
 
-            case 36 : { //integral poly
+            case 37 : { //integral poly
                 std::vector<Monomial> v;
                 double numeric, index, size;
                 std::cout<< "Podaj rozmiar wielomianu,a następnie kolejne współczynniki i wykładniki:";
@@ -621,7 +622,7 @@ int main() {
                 break;
             }
 
-            case 37 : {  //integral poly indefitited
+            case 38 : {  //integral poly indefitited
                 std::vector<Monomial> v;
                 float numeric, index, size;
                 std::cout<< "Podaj rozmiar wielomianu, a następnie jego kolejne współczynniki i wykładniki:";
@@ -646,7 +647,83 @@ int main() {
                 }
                 std::cout <<" + C"<< std::endl << std::endl;
                 break;
-            }*/
+            }
+            case 39:
+                double liczba39;
+
+                std::cout << "Podaj liczbe:";
+                std::cin >> liczba39;
+
+                std::cout << "mantysa ("<< liczba39 <<") = " << mantysa<double> (liczba39) << std::endl;
+
+                break;
+
+            case 40:
+            {
+                std::size_t liczba40;
+                std::cout << "Podaj wymiar:";
+                std::cin >> liczba40;
+
+                Vector<double> v1(liczba40);
+                Vector<double> v2(liczba40);
+
+                v1.set(liczba40);
+                v2.set(liczba40);
+
+                std::cout << "Wynik dodawania: " << to_string1(add_vectors<double> (v1, v2)) << std::endl;
+
+                break;
+            }
+
+            case 41:
+            {
+                std::size_t liczba41;
+                std::cout << "Podaj wymiar:";
+                std::cin >> liczba41;
+
+                Vector<double> v(liczba41);
+
+                v.set(liczba41);
+
+                std::cout << "Dlugosc wynosi: " << v.norm() << std::endl;
+
+                break;
+            }
+
+            case 42:
+                double liczba42;
+
+                std::cout << "Podaj liczbe:";
+                std::cin >> liczba42;
+
+                scientific_notation<double> (liczba42);
+
+                break;
+
+            case 43:
+                double liczba43;
+
+                std::cout << "Podaj liczbe:";
+                std::cin >> liczba43;
+
+                std::cout << power_10<double> (liczba43) << std::endl;
+
+                break;
+
+            case 44:
+                double liczba44;
+                double liczba45;
+
+                std::cout << "Podaj n:";
+                std::cin >> liczba44;
+
+                std::cout << "Podaj k:";
+                std::cin >> liczba45;
+
+                std::cout << "Wynik symbolu Newtona " << liczba44 << " po " << liczba45 << " = "
+                          << binomial_coefficient<double> (liczba44, liczba45) << std::endl;
+
+                break;
 
         }
 
