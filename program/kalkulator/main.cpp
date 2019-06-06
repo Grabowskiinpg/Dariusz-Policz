@@ -683,7 +683,7 @@ int main() {
                 v1.set(liczba40);
                 v2.set(liczba40);
 
-                std::cout << "Wynik dodawania: " << to_string1(add_vectors<double> (v1, v2)) << std::endl;
+                std::cout << "Wynik dodawania:" << to_string1(add_vectors<double> (v1, v2)) << std::endl;
 
                 break;
             }
