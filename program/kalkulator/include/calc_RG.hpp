@@ -7,10 +7,7 @@
 
 long factorial(float fac);
 
-template<typename T>
-void remember(double* adr, T val){
-    *adr = (double)val;
-}
+void remember(double& adr, double val);
 
 double degrees(double rad);   //zmiana na stopnie
 
