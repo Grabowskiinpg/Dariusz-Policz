@@ -459,7 +459,7 @@ int main() {
 
                 break;
 
-            /*
+
             case 31 :
 
                 int nrdzial2;
@@ -487,28 +487,31 @@ int main() {
 
                 switch (nrdzial2) {
 
-                    case 1 :
+                    case 1 : {
                         Monomial m_wyn = dirativeOfMonomial(m);
-                        std::cout << m_wyn.get_numeric() << "x^" << m_wyn.get_index()<< std::endl<< std::endl;
+                        std::cout << m_wyn.get_numeric() << "x^" << m_wyn.get_index() << std::endl << std::endl;
                         break;
-                    case 2 :
+                    }
+                    case 2 : {
                         Monomial m_wyn2 = integralOfMonomialindefined(m);
-                        std::cout << m_wyn2.get_numeric() << "x^" << m_wyn2.get_index()<< std::endl<< std::endl;
+                        std::cout << m_wyn2.get_numeric() << "x^" << m_wyn2.get_index() << std::endl << std::endl;
                         break;
-                    case 3 :
+                    }
+                    case 3 : {
                         double start;
                         double koniec;
                         std::cout << "Podaj lewa granice" << std::endl;
                         std::cin >> start;
                         std::cout << "Podaj prawa granice" << std::endl;
-                        std::cin >> wsp;
+                        std::cin >> koniec;
 
-                        double m_wyn3 = integralOfMonomial(m,start,koniec);
-                        std::cout << m_wyn3<< std::endl<< std::endl;
+                        double m_wyn3 = integralOfMonomial(m, start, koniec);
+                        std::cout << m_wyn3 << std::endl << std::endl;
                         break;
+                    }
                 }
                 break;
-                */
+
             
             //poniższe są moje ~RG
             /*case 31 : { //exponent
