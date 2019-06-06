@@ -10,6 +10,7 @@
 #include <numeric>
 #include <map>
 #include <array>
+#include <sstream>
 //Podstawowe funckje (prototypy)
 template<typename T>
 T sum(T a , T b){
@@ -125,7 +126,7 @@ T ceil(T x){
 
 template<typename T>
 T mantysa(T x){
-    return std::round((x - floor<T> (x))*1000)/1000;
+    return x - floor<T> (x);
 }
 
 //-----------------------------Wektory----------------------------- 
@@ -137,6 +138,15 @@ public:
     Vector(std::size_t n = 3) : v_(n, 0) {}
 
     T norm();
+
+    void set(std::size_t n){
+        T liczba;
+        for(std::size_t i = 0; i < n; i++) {
+            std::cout << "Podaj " << i+1 <<" liczbe: ";
+            std::cin >> liczba;
+            v_[i] = liczba;
+        }
+    }
 
     std::size_t size() const { return v_.size(); }
 
@@ -173,6 +183,19 @@ T Vector<T>::norm(){
     T sum_of_squares = std::accumulate(v_.begin(), v_.end(), 0, [](int acc, int elem) { return acc + elem * elem; });
 
     return sqrt(sum_of_squares);
+}
+
+template<typename T>
+std::string to_string1(const Vector<T>& v) {
+    std::ostringstream oss;
+
+    oss << "[";
+    for (auto it = v.cbegin(); it != v.cend(); ++it) {
+        oss << " " << *it << ((it != v.cend() - 1) ? "," : " ");
+    }
+    oss << "]";
+
+    return oss.str();
 }
 
 //-----------------------------Macierze-----------------------------
@@ -215,7 +238,7 @@ T det(Matrix<T>& m){ //pytanie czy przez referencję
 template<typename T>
 void scientific_notation(T x){
     std::cout.setf(std::ios::scientific);
-    std::cout << x;
+    std::cout << x << std::endl;
     std::cout.unsetf(std::ios::scientific);
 }
 
