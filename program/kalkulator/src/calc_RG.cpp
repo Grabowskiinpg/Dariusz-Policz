@@ -40,3 +40,7 @@ Polynomial integralOfPolynomialIndefinited(const Polynomial& poly){
     Polynomial ret(result);
     return ret;
 }
+
+void remember(double& adr, double val){
+    adr = val;
+}
